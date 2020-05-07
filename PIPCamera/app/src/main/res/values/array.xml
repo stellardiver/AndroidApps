@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="colorArray">
+        <item>\#f1b0db</item>
+        <item>\#faedf4</item>
+        <item>\#fcf3ec</item>
+        <item>\#f1b9c4</item>
+        <item>\#ffa621</item>
+        <item>\#fdc900</item>
+        <item>\#fffefc</item>
+        <item>\#fde202</item>
+        <item>\#ef8b00</item>
+        <item>\#fae452</item>
+        <item>\#f0331f</item>
+        <item>\#e58c14</item>
+        <item>\#7df063</item>
+        <item>\#31fa03</item>
+        <item>\#ee0c3a</item>
+        <item>\#f2541a</item>
+        <item>\#f5bdf2</item>
+        <item>\#d00333</item>
+        <item>\#231ae1</item>
+        <item>\#01ffff</item>
+        <item>\#00ff4f</item>
+        <item>\#fefd00</item>
+        <item>\#b1fefe</item>
+        <item>\#8affc6</item>
+        <item>\#fe3882</item>
+        <item>\#33dfeb</item>
+        <item>\#6feffa</item>
+        <item>\#fdfaff</item>
+        <item>\#7c1d5d</item>
+        <item>\#ffff07</item>
+        <item>\#9d9504</item>
+        <item>\#f5b225</item>
+        <item>\#ffb3ad</item>
+        <item>\#ffb6b7</item>
+        <item>\#860981</item>
+        <item>\#860981</item>
+        <item>\#111111</item>
+    </string-array>
+    <string-array name="FontFamily">
+        <item>fonts/font1.ttf</item>
+        <item>fonts/font2.ttf</item>
+        <item>fonts/font3.ttf</item>
+        <item>fonts/font4.ttf</item>
+        <item>fonts/font5.ttf</item>
+        <item>fonts/font6.ttf</item>
+        <item>fonts/font7.ttf</item>
+        <item>fonts/font8.ttf</item>
+        <item>fonts/font9.ttf</item>
+        <item>fonts/font10.ttf</item>
+        <item>fonts/font11.ttf</item>
+        <item>fonts/font12.ttf</item>
+        <item>fonts/font13.TTF</item>
+        <item>fonts/font14.ttf</item>
+        <item>fonts/font15.ttf</item>
+        <item>fonts/font16.ttf</item>
+        <item>fonts/font17.ttf</item>
+        <item>fonts/font18.ttf</item>
+        <item>fonts/font19.ttf</item>
+        <item>fonts/font20.ttf</item>
+        <item>fonts/font21.ttf</item>
+        <item>fonts/font22.ttf</item>
+        <item>fonts/font23.ttf</item>
+        <item>fonts/font24.ttf</item>
+        <item>fonts/font25.ttf</item>
+        <item>fonts/font26.ttf</item>
+        <item>fonts/font27.TTF</item>
+        <item>fonts/font28.TTF</item>
+        <item>fonts/font29.ttf</item>
+        <item>fonts/font30.ttf</item>
+        <item>fonts/font31.ttf</item>
+        <item>fonts/font32.ttf</item>
+        <item>fonts/font33.ttf</item>
+        <item>fonts/font34.ttf</item>
+        <item>fonts/font35.ttf</item>
+        <item>fonts/font36.ttf</item>
+    </string-array>
+
+</resources>

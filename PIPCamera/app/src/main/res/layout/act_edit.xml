@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:padding="8dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back"
+            android:tint="@android:color/black"
+            android:background="@android:color/transparent"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"/>
+
+        <ImageButton
+            android:id="@+id/done"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/save_classics"
+            android:tint="@android:color/black"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/rel_top"
+        android:layout_above="@+id/all_gallery"
+        android:layout_centerInParent="true"
+        android:id="@+id/framePhotoGallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageblur"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/frameImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"  />
+
+        <RelativeLayout
+            android:id="@+id/imglayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.xiaopo.flying.sticker.StickerView
+                android:id="@+id/sticker_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_above="@+id/square_footer"
+        android:id="@+id/all_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <Gallery android:id="@+id/stickerGallery"
+            android:background="@drawable/gallery_strip"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spacing="5dp" />
+
+        <Gallery android:id="@+id/frameGallery"
+            android:background="@drawable/gallery_strip"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spacing="5dp" />
+
+        <Gallery android:id="@+id/filterGallery"
+            android:background="@drawable/gallery_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:spacing="5dp" />
+
+        <Gallery android:id="@+id/effectGallery"
+            android:background="@drawable/gallery_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:spacing="5dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/gallery_strip"
+            android:padding="5dp" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/square_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/square_footer_inner_container"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/button_square_picture"
+                android:text="@string/square_lib_footer_crop"
+                android:drawableTop="@drawable/picture"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
+                style="@style/square_footer_imagebutton_style" />
+
+            <Button
+                android:id="@+id/button_square_effect"
+                android:text="@string/square_lib_footer_tools"
+            android:drawableTop="@drawable/mirror_effect"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
+                style="@style/square_footer_imagebutton_style" />
+
+            <Button
+                android:id="@+id/button_square_frame"
+                android:text="@string/square_lib_footer_Frame"
+                android:drawableTop="@drawable/mirror_frame"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
+                style="@style/square_footer_imagebutton_style" />
+
+            <Button
+                android:id="@+id/button_square_text"
+                android:text="@string/square_lib_footer_text"
+                android:drawableTop="@drawable/mirror_text_icon"
+                android:textColor="@color/white"
+                android:drawableTint="@color/white"
+                style="@style/square_footer_imagebutton_style" />
+
+            <Button
+                android:id="@+id/button_mirror_sticker"
+                android:text="@string/square_lib_footer_sticker"
+                android:drawableTop="@drawable/sticker_snap"
+                android:textColor="@color/white"
+                style="@style/square_footer_imagebutton_style" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

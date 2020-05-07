@@ -1,0 +1,13 @@
+<RelativeLayout android:layout_above="@+id/square_footer"
+    android:id="@+id/all_gallery"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#fff"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Gallery android:id="@+id/bgGallery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:spacing="5dp" />
+
+</RelativeLayout>

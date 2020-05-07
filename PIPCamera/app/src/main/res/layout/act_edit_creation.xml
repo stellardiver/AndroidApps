@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/h_d">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back"
+            android:tint="@android:color/white"
+            android:visibility="visible"
+            android:id="@+id/edit_classics_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:src="@mipmap/save_classics"
+            android:tint="@android:color/white"
+            android:id="@+id/edit_classics_done"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/h_d"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/linear_bottom">
+        <include layout="@layout/act_edit_capture"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="bottom"
+            android:id="@+id/linear_bottom"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayoutStyleShape"
+                    android:visibility="visible">
+                    <include layout="@layout/act_include_style_menu_shape"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayoutStyleFrame"
+                    android:visibility="gone">
+                    <include layout="@layout/act_include_style_menu_frame"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayoutStyleRatio"
+                    android:visibility="gone">
+                    <include layout="@layout/act_include_style_menu_ratio"/>
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayoutStyleStickers"
+                android:visibility="gone">
+                <include android:id="@+id/stickerGridLayout"
+                    layout="@layout/act_sticker_grid" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayoutStyleBG"
+                android:visibility="gone">
+                <include android:id="@+id/bglayout"
+                    layout="@layout/act_bg_grid" />
+            </LinearLayout>
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include layout="@layout/act_include_style_bottom"/>
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

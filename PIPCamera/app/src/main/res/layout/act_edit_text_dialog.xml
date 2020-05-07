@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/popup_trans_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="25dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/editTextLayout"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageButton
+            android:id="@+id/btn_edittext_done"
+            android:background="@drawable/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_edittext_cancel"
+            android:background="@drawable/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+</LinearLayout>

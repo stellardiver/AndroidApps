@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2F7C5B</color>
+    <color name="colorPrimaryDark">#1A4533</color>
+    <color name="colorPrimaryAlpha">#802F7C5B</color>
+    <color name="clr_pri">#2F7C5B</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="save">#b25374</color>
+    <color name="back_layout2">#e60073</color>
+    <color name="back_layout"> #cc0066</color>
+    <color name="color_bar_divider_horizontal">#ffc4c4c4</color>
+    <color name="color_top_bar">#ffff7673</color>
+    <color name="color_bottom_bar">#ffffffff</color>
+    <color name="color_page_indicator_fill_color">#ffff7673</color>
+    <color name="color_page_indicator_color">#4c58585a</color>
+    <color name="color_font_button">#ff404040</color>
+    <color name="black">#000000</color>
+    <color name="stickerGridBackground">#ebacacac</color>
+
+    <color name="square_footer_button_color_normal">#ff020608</color>
+    <color name="square_footer_button_color_pressed">#ff5a00</color>
+
+    <color name="mirror_footer_button_color_normal">#ff020608</color>
+
+    <color name="mirror_blue">#ff3fa6d1</color>
+    <color name="mirror_blue_pressed">#ff3992b7</color>
+
+    <color name="mirror_green">#ff5bc071</color>
+    <color name="mirror_green_pressed">#ff4aa45d</color>
+    <color name="mirror_light_green">#ff94d094</color>
+    <color name="mirror_light_green_pressed">#ff6d976d</color>
+    <color name="mirror_mustard">#fff7aa30</color>
+    <color name="mirror_mustard_pressed">#ffc3882b</color>
+    <color name="mirror_orange">#ffff8a58</color>
+    <color name="mirror_orange_pressed">#ffc06c48</color>
+    <color name="mirror_pink">#ffd23cbb</color>
+    <color name="mirror_pink_pressed">#ff932c83</color>
+    <color name="mirror_red">#ffcf584d</color>
+    <color name="mirror_red_pressed">#ffb64e45</color>
+    <color name="mirror_somon">#ffff6f84</color>
+    <color name="mirror_somon_pressed">#ffbb5161</color>
+    <color name="mirror_tool_background_color">#ff252324</color>
+    <color name="mirror_turquoise">#ff24b9cf</color>
+    <color name="mirror_turquoise_pressed">#ff208d9d</color>
+
+    <color name="lib_adjustment_background_color">#00b4cc</color>
+    <color name="footer_button_color_pressed">#009eb3</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="dark_blue">#4c00e6</color>
+    <color name="dark_blue_pressed">#3b00b3</color>
+    <color name="dark_orange">#E64A19</color>
+    <color name="dark_orange_pressed">#BF360C</color>
+
+    <color name="dark_pink">#b30086</color>
+    <color name="dark_pink_pressed">#800060</color>
+
+    <color name="dark_green">#388E3C</color>
+    <color name="dark_green_pressed">#1B5E20</color>
+
+    <color name="dark_wood">#b38600</color>
+    <color name="dark_wood_pressed">#806000</color>
+
+    <color name="dark_red">#c0304b</color>
+    <color name="dark_red_pressed">#ae0a00</color>
+    <color name="white">#ffffffff</color>
+
+</resources>

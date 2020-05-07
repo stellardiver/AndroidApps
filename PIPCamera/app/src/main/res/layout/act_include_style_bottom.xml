@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:background="@color/color_bottom_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView
+        android:id="@+id/square_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/square_footer_inner_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imageButtonStyleBottomShape"
+                android:src="@drawable/selector_style_shape_button"
+                android:tint="@android:color/white"
+                style="@style/BottomImageButton"
+                android:background="@color/clr_pri"/>
+            <ImageButton
+                android:id="@+id/imageButtonStyleBottomRatio"
+                android:src="@drawable/selector_style_ratio_button"
+                android:tint="@android:color/white"
+                style="@style/BottomImageButton" />
+            <ImageButton
+                android:id="@+id/imageButtonStyleBottomFrame"
+                android:src="@drawable/selector_style_frame_button"
+                android:tint="@android:color/white"
+                style="@style/BottomImageButton" />
+            <ImageButton
+                android:id="@+id/imageButtonMainBottomBG"
+                android:src="@drawable/selector_style_pattern_button"
+                android:tint="@android:color/white"
+                style="@style/BottomImageButton" />
+            <ImageButton
+                android:id="@+id/imageButtonMainBottomText"
+                android:src="@drawable/selector_text_button"
+                android:tint="@android:color/white"
+                style="@style/BottomImageButton" />
+            <ImageButton
+                android:id="@+id/imageButtonMainBottomSticker"
+                android:src="@drawable/selector_sticker_button"
+                android:tint="@android:color/white"
+                style="@style/BottomImageButton" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

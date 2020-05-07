@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/my_awesome_toolbar"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/ic_option_menu_main"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_option_menu"
+            android:tint="@android:color/white"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:layout_above="@+id/adLAyout">
+
+        <View android:layout_width="fill_parent"
+            android:layout_height="@dimen/montagen_padding_view_size" />
+        <ImageView android:id="@+id/montagens_show_case"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/show_0"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_below="@+id/my_awesome_toolbar"/>
+        <View android:layout_width="fill_parent"
+            android:layout_height="@dimen/montagen_padding_view_size" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/home_classics"
+                android:background="#B34A4A"
+                android:clickable="true"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <ImageView android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/pip_classics" />
+            </LinearLayout>
+
+            <View android:layout_width="@dimen/montagen_padding_view_size"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/home_pro_edit"
+                android:background="#418EDA"
+                android:clickable="true"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+                <ImageView android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/pip_pro_edit" />
+            </LinearLayout>
+
+            <View android:layout_width="@dimen/montagen_padding_view_size"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/home_mirror"
+                android:background="#EC9947"
+                android:clickable="true"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+                <ImageView android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/pip_mirror" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0">
+            <LinearLayout android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/home_mycreation"
+                android:background="#3DB59D"
+                android:clickable="true"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:id="@+id/promo_button_image"
+                    android:clickable="false"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/pip_creation"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+            <View
+                android:layout_width="@dimen/montagen_padding_view_size"
+                android:layout_height="fill_parent" />
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/share"
+                android:background="#70B62A"
+                android:clickable="true"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/pip_share" />
+            </LinearLayout>
+            <View
+                android:layout_width="@dimen/montagen_padding_view_size"
+                android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/rate"
+                android:background="#604EC1"
+                android:clickable="true"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/pip_rate" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/adLAyout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/Image_overlayadview"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:clickable="false"
+            android:orientation="vertical"
+            android:src="@android:color/transparent"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

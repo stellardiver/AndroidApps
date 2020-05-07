@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/l_y"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"/>
+        </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/l_y"
+        android:id="@+id/view"
+        android:background="@android:color/white"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/view"
+        android:gravity="bottom">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/bg"
+            android:id="@+id/image_main_classics"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/share_btn"
+                android:layout_height="50dp"
+                android:id="@+id/btn_classic_share" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/delete_btn"
+                android:layout_height="50dp"
+                android:id="@+id/btn_classic_delete" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/cancle_btn"
+                android:layout_height="50dp"
+                android:id="@+id/btn_classic_cancle" />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.25"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+# ninja log v5
+33	432	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ad6d07f122c9b673
+433	923	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	3491454b772f4cbb
+2	394	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ad6d07f122c9b673
+394	474	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	3491454b772f4cbb
+2	505	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ad6d07f122c9b673
+505	703	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	3491454b772f4cbb
+3	685	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ad6d07f122c9b673
+685	826	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	3491454b772f4cbb
+3	402	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ad6d07f122c9b673
+403	486	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	3491454b772f4cbb
+3	468	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ad6d07f122c9b673
+468	1028	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	3491454b772f4cbb
+2	451	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	ad6d07f122c9b673
+451	1045	0	../../../../build/intermediates/cmake/debug/obj/x86/libnative-lib.so	3491454b772f4cbb

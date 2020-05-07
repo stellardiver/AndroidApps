@@ -1,0 +1,42 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="padding_normal">5.0dip</dimen>
+    <dimen name="padding_large">10.0dip</dimen>
+    <dimen name="padding_vlarge">15.0dip</dimen>
+    <dimen name="padding_vvlarge">30.0dip</dimen>
+    <dimen name="font_normal">14.0dip</dimen>
+    <dimen name="font_large">18.0dip</dimen>
+    <dimen name="font_mlarge">22.0dip</dimen>
+    <dimen name="font_vlarge">24.0dip</dimen>
+    <dimen name="padding_colorSeekbar">24.0dip</dimen>
+    <dimen name="top_bar_height">50.0dip</dimen>
+    <dimen name="bottom_bar_height">50.0dip</dimen>
+    <dimen name="bar_divider_height">1.0dip</dimen>
+    <dimen name="listHeight">250.0dip</dimen>
+    <dimen name="square_footer_button_text_size">10.0sp</dimen>
+    <dimen name="square_footer_button_style_min_width">60.0dip</dimen>
+    <dimen name="square_footer_button_padding">3.0dip</dimen>
+    <dimen name="montagen_padding_view_size">5.0dip</dimen>
+    <dimen name="promo_button_image_width">60.0dip</dimen>
+
+    <dimen name="mirror_brush_dialog_width">300.0dip</dimen>
+    <dimen name="mirror_camera_button_margin_left">10.0dip</dimen>
+    <dimen name="mirror_footer_button_padding">3.0dip</dimen>
+    <dimen name="mirror_load_image_button_padding_left">16.0dip</dimen>
+    <dimen name="mirror_load_image_layout_text_size">18.0sp</dimen>
+    <dimen name="mirror_main_cam_button_margin_bottom">15.0dip</dimen>
+    <dimen name="mirror_main_toolbar_button_margin_left">15.0dip</dimen>
+    <dimen name="mirror_main_toolbar_button_padding">6.0dip</dimen>
+    <dimen name="mirror_main_toolbar_padding">3.0dip</dimen>
+    <dimen name="mirror_button_padding">4.0dip</dimen>
+    <dimen name="mirror_control_name_text_size">20.0sp</dimen>
+    <dimen name="mirror_crop_button_size">55.0dip</dimen>
+    <dimen name="mirror_footer_button_text_size">10.0sp</dimen>
+    <dimen name="mirror_ratio_button_height">60.0dip</dimen>
+    <dimen name="mirror_ratio_button_width">60.0dip</dimen>
+    <dimen name="mirror_ratio_text_size">12.0sp</dimen>
+    <dimen name="mirror_toolbar_height">40.0dip</dimen>
+
+</resources>

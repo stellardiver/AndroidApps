@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/act_text_header"
+            android:id="@+id/doneCancelBtn2"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/buttonLayout"
+            android:layout_below="@+id/doneCancelBtn2">
+        <RelativeLayout
+            android:id="@+id/mainTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/textviewLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp">
+                <TextView
+                    android:textSize="35sp"
+                    android:textColor="#000"
+                    android:id="@+id/textView"
+                    android:padding="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/allLayout"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:layout_alignParentBottom="true">
+
+                <RelativeLayout
+                    android:id="@+id/fontLayout"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/fontfacelayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="4.0"
+                        android:background="@color/colorPrimaryDark"
+                        android:layout_centerHorizontal="true">
+                        <ImageButton
+                            android:id="@+id/btn_normalfont"
+                            android:background="@drawable/btn_normal_selection"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0" />
+                        <ImageButton
+                            android:id="@+id/btn_boldfont"
+                            android:background="@drawable/btn_bold_selection"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0" />
+                        <ImageButton
+                            android:id="@+id/btn_italicfont"
+                            android:background="@drawable/btn_italics_selection"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0" />
+                        <ImageButton
+                            android:id="@+id/btn_bolditalicfont"
+                            android:background="@drawable/btn_bold_italics_selection"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:id="@+id/whiteStrip2"
+                        android:background="#111111"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:layout_above="@+id/seekBar" />
+                    <SeekBar
+                        android:id="@+id/seekBar"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:max="100"
+                        android:maxHeight="2dp"
+                        android:minHeight="2dp"
+                        android:progressDrawable="@drawable/seekbar_style"
+                        android:thumb="@drawable/adjust_button"
+                        android:layout_below="@id/fontfacelayout"
+                        android:layout_centerHorizontal="true" />
+                    <Gallery
+                        android:id="@+id/fontGallery"
+                        android:padding="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:spacing="5dp"
+                        android:layout_below="@+id/seekBar"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/colorLayout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/colorCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Multi Color" />
+                    <SeekBar
+                        android:id="@+id/textOpacitySeekBar"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:max="100"
+                        android:minHeight="2.0dip"
+                        android:maxHeight="2.0dip"
+                        android:progress="100"
+                        android:progressDrawable="@drawable/seekbar_style"
+                        android:thumb="@drawable/adjust_button"
+                        android:layout_toRightOf="@+id/colorCheckBox" />
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/colorSectionChoice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/colorCheckBox"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageButton
+                            android:id="@+id/btn_singleColor"
+                            android:background="@drawable/btn_color1_hover"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:id="@+id/btn_multiColor"
+                            android:background="@drawable/btn_color2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/btn_singleColor" />
+
+                    </RelativeLayout>
+                    <Gallery
+                        android:id="@+id/colorGallery"
+                        android:padding="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:spacing="5dp"
+                        android:layout_below="@+id/colorSectionChoice" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/textStyleLayout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/shadowLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0">
+
+                            <SeekBar
+                                android:id="@+id/shadwoXYSeekBar"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:max="100"
+                                android:progress="50"
+                                android:maxHeight="2dp"
+                                android:minHeight="2dp"
+                                android:progressDrawable="@drawable/seekbar_style"
+                                android:thumb="@drawable/adjust_button" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0">
+                            <SeekBar
+                                android:id="@+id/shadowRadiosSeekBar"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:max="100"
+                                android:maxHeight="2dp"
+                                android:minHeight="2dp"
+                                android:progressDrawable="@drawable/seekbar_style"
+                                android:thumb="@drawable/adjust_button"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <Gallery
+                        android:id="@+id/shadowcolorGallery"
+                        android:padding="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:spacing="5dp"
+                        android:layout_below="@+id/shadowLayout" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/TextbackgroundLayout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/BgcolorCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Use Multi Color" />
+                    <SeekBar
+                        android:id="@+id/paddingSeekBar"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:max="100"
+                        android:maxHeight="2dp"
+                        android:minHeight="2dp"
+                        android:progressDrawable="@drawable/seekbar_style"
+                        android:thumb="@drawable/adjust_button"
+                        android:layout_toRightOf="@+id/BgcolorCheckBox" />
+                    <RelativeLayout
+                        android:id="@+id/BgcolorSectionChoice"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/BgcolorCheckBox"
+                        android:layout_centerHorizontal="true">
+
+                        <ImageButton
+                            android:id="@+id/btn_BgsingleColor"
+                            android:background="@drawable/btn_color1_hover"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageButton
+                            android:id="@+id/btn_BgmultiColor"
+                            android:background="@drawable/btn_color2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/btn_BgsingleColor" />
+
+                    </RelativeLayout>
+                    <Gallery
+                        android:id="@+id/colorGalleryBg"
+                        android:padding="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="5dp"
+                        android:layout_below="@+id/BgcolorSectionChoice" />
+                    <Gallery
+                        android:id="@+id/patternGallery"
+                        android:padding="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:spacing="5dp"
+                        android:layout_below="@+id/colorGalleryBg" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/whiteStrip1"
+                android:background="#111111"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_above="@+id/allLayout" />
+        </RelativeLayout>
+        </FrameLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:id="@+id/l_edit"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/inputKet"
+                android:background="@drawable/btn_edit_text_selection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l_font"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:background="@color/clr_pri"
+            android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/btn_font"
+                android:background="@drawable/btn_text_style_selection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_fcolor"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/btn_textColor"
+                android:background="@drawable/btn_text_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_fshadow"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/btn_textStyle"
+                android:background="@drawable/btn_text_glow_selection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l_frame"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/btn_textBg"
+                android:background="@drawable/btn_text_bg_selection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/whiteStrip"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/buttonLayout" />
+    </RelativeLayout>
+
+</RelativeLayout>

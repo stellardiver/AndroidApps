@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">PIP Camera</string>
+    <string name="title_style_top">Style</string>
+    <string name="empty_textfile">There is no image, Create new image.</string>
+
+    <string name="square_lib_footer_crop">Gallery</string>
+    <string name="square_lib_footer_tools">Effect</string>
+    <string name="square_lib_footer_blur">Blur</string>
+    <string name="square_lib_footer_Frame">Frame</string>
+    <string name="square_lib_footer_filter">Filter</string>
+    <string name="square_lib_footer_sticker">Sticker</string>
+    <string name="square_lib_footer_text">Text</string>
+
+    <string name="directory">/PIP Camera/</string>
+    <string name="save_image_lib_loading_error_message">Could not load the photo, please use another GALLERY app!</string>
+
+    <string name="mirror_lib_footer_edit">@string/save_image_lib_footer_edit</string>
+    <string name="save_image_lib_footer_edit">Edit</string>
+    <string name="mirror_lib_footer_effect">@string/save_image_lib_footer_effect</string>
+    <string name="mirror_lib_footer_frame">@string/save_image_lib_Frame</string>
+    <string name="mirror_lib_footer_mirror">@string/save_image_lib_footer_mirror</string>
+    <string name="mirror_lib_footer_ratio">@string/save_image_lib_footer_ratio</string>
+    <string name="mirror_lib_footer_shape">@string/save_image_lib_footer_shape</string>
+    <string name="mirror_lib_footer_sticker">@string/save_image_lib_footer_sticker</string>
+    <string name="mirror_lib_footer_text">@string/save_image_lib_footer_text</string>
+    <string name="mirror_lib_select_mirror">@string/save_image_lib_footer_mirror</string>
+
+    <string name="save_image_lib_Frame">Frame</string>
+    <string name="save_image_lib_camera">Camera</string>
+    <string name="save_image_lib_collage">Collage</string>
+    <string name="save_image_lib_footer_effect">Effect</string>
+    <string name="save_image_lib_footer_mirror">Mirror</string>
+    <string name="save_image_lib_footer_ratio">Ratio</string>
+    <string name="save_image_lib_footer_shape">Shape</string>
+    <string name="save_image_lib_footer_sticker">Sticker</string>
+    <string name="save_image_lib_footer_text">Text</string>
+    <string name="save_image_lib_gallery">Gallery</string>
+
+    <string name="saveimage">"Are you sure to save this image ?"</string>
+    <string name="save_msg">"Do you want to save changes you made to image before leave this screen ?"</string>
+
+    <string name="FullAdId">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="BannerAdId">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="FBFullAdId">YOUR_PLACEMENT_ID</string>
+    <string name="FBBannerAdId">YOUR_PLACEMENT_ID</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+
+    <string name="moreappslink">"https://play.google.com/store/apps/developer?id=PixelCore+Studio"</string>
+    <string name="privacypolicylink">"https://www.freeprivacypolicy.com/privacy/view/186fd520bb8c3997f755fc9b8a816415"</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<RelativeLayout android:layout_above="@+id/square_footer"
+    android:id="@+id/all_gallery"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#fff"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Gallery android:id="@+id/stickerGallery"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spacing="5dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:padding="5dp" />
+
+</RelativeLayout>
